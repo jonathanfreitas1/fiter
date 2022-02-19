@@ -1,9 +1,7 @@
-import './App.css';
-
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 
-function App() {
+function Home() {
 
   const [dados, setDados] = useState();
 
@@ -17,9 +15,11 @@ function App() {
   console.log(dados)
   return (
     <div className="App">
-      <h1>{dados[0].nome}</h1>
+      <div>
+          {dados.map(usuario => <h1 key={usuario.nome}>{usuario.nome}</h1>)}
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Home;
