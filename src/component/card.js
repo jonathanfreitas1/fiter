@@ -1,4 +1,5 @@
 import { Card } from 'antd';
+import 'antd/dist/antd.css';
 
 
 const { Meta } = Card;

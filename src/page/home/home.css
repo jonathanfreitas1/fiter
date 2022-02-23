@@ -1,0 +1,9 @@
+.container{
+    
+}
+.ant-col-xs-24 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
