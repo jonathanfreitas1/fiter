@@ -21,7 +21,7 @@ function Home() {
     {nome: 'teste10', cargo: 'teste', telefone: 'teste', foto: '' },
     {nome: 'teste11', cargo: 'teste', telefone: 'teste', foto: '' },
     {nome: 'teste12', cargo: 'teste', telefone: 'teste', foto: '' },
-    {nome: 'teste13', cargo: 'teste', telefone: 'teste', foto: '' },
+    {nome: 'teste13', cargo: 'teste', telefone: 'teste', foto: '' }, 
   ] 
 
   useEffect(() => {
@@ -32,11 +32,13 @@ function Home() {
     })
   },[])
   console.log(dados)
+
   return (
     <div className='container'>
-      <Row>
-      {exemplo?.map(usuario =>
-        <Col xs={24} sm={10} md={8} lg={8} xl={6} xxl={4}>
+      <h1 className='titulo'>Colaboradores Fiter</h1>
+      <Row gutter={24}>
+      {dados?.map(usuario =>
+        <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={4}>
           <Cartao 
             className='cartoes'
             key={usuario.telefone} 
